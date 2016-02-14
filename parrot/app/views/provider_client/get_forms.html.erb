@@ -107,11 +107,15 @@
         <option value="FEP_procedures">FEP Procedures</option>
       </select>
       <br>
-      <input type="submit" value="Submit">
+      <!-- <input type="submit" value="Submit"> -->
 
       <SCRIPT>
-      	var myWindow = window.open("confirmationButton.html.erb", "", "width=400, height=200, top=300, left=600");
+	      function openThatWindow() {
+	      	var myWindow = window.open("confirmationButton.html.erb", "", "width=400, height=200, top=300, left=600");
+	      }
       </SCRIPT>
+
+      <button onclick="openThatWindow()">Submit</button>
 
     </form>
   </body>
