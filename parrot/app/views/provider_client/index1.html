@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  </head>
+  <body>
+    <h1> Medical Prior Authorization Request </h1>
+    <h2> MICHIGAN </h2>
+    <h3>Phone: 886-894-6462</h3>
+
+    <nav></nav>
+
+
+    <form>
+
+
+    <label>Date of Request:</label>
+      <input type="date" name="dor"><br><br>
+
+      <strong>Patient Information</strong><br>
+
+      <label>Patient Name:</label>
+      <input type="text" name="pname"><br>
+
+      <label>Member ID:</label>
+      <input type="text" name="MemID"><br>
+
+      <label>Gender:</label>
+      <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br>
+
+      <label>Date of birth:</label>
+      <input type="date" name="dob"><br>
+
+      <label>Phone Number:</label>
+      <input type="tel" name="phone" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
+
+      <strong>Prescriber Information</strong><br>
+
+      <label>Prescriber Name:</label>
+      <input type="text" name="prescibername"><br>
+
+      <label>NPI #:</label>
+      <input type="text" name="NPI_ID"><br>
+
+      <label>Office Phone Number:</label>
+      <input type="tel" name="officephone" pattern="\d{3}-\d{3}-\d{4}" required><br>
+
+      <label>Office Fax Number:</label>
+      <input type="tel" name="officefax" pattern="\d{3}-\d{3}-\d{4}" required><br>
+
+      <label>Name of Contact:</label>
+      <input type="text" name="contact_person"><br><br>
+
+      <strong>Diagnosis and Medical Information</strong><br>
+
+      <label>Medication:</label>
+      <input type="text" name="medication"><br>
+
+      <label>Strength and Route of Administration:</label>
+      <input type="text" name="str_roa"><br>
+
+      <label>Frequency:</label>
+      <input type="text" name="frequency"><br>
+
+      <label>Height & Weight:</label>
+      <input type="text" name="heightandweight"><br>
+
+      <label>Length of Therapy:</label>
+      <input type="text" name="lengthoftherapy"><br>
+
+      <label>Quantity:</label>
+      <input type="text" name="quantity"><br>
+
+      <label>BMI:</label>
+      <input type="text" name="BMI"><br>
+
+      <label>Date Calculation:</label>
+      <input type="text" name="datecalc"><br>
+
+      <label>Blood Pressure:</label>
+      <input type="text" name="bloodpressure"><br>
+
+      <label>Taken On:</label>
+      <input type="text" name="taken_on"><br>
+
+      <label>Diagnosis:</label>
+      <input type="text" name="diagnosis"><br>
+
+      <label>Drug Allergies:</label>
+      <input type="text" name="drugallergies"><br><br>
+      
+      Rationale for Prior Authorization
+      History of a medical condition, allergies or other pertinent information requiring the use of this medication:
+      <textarea name="Notes"></textarea><br><br>
+
+      
+      <label>Forms:</label>
+      <select name="Form"><br>
+
+        <option value="PAforms">Procedures</option>
+        <option value="office_drugs">Office Drugs</option>
+        <option value="home_inj_drugs">Oral/Tropical Drugs</option>
+        <option value="procedures">Procedures</option>
+        <option value="FEP_procedures">FEP Procedures</option>
+      </select>
+      <br>
+      <input type="submit" value="Submit">
+  
+    </form>
+  </body>
+</html>
+
+  
