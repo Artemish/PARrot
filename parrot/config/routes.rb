@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :admins
+  devise_for :patients
+  # devise_for :patients
+  # resources :form_requests
+  # resources :par_form
+
   get 'provider_client/get_forms'
 
   # The priority is based upon order of creation: first created -> highest priority.
